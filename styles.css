@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+h1 {
+    color: #0be930;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: clamp(1.5rem, 5vw, 3rem); 
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 1200px;
+    gap: 20px;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+img {
+    width: 100%;
+    max-width: 400px; 
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.text-content {
+    flex: 1; 
+    min-width: 280px; 
+}
+h2 {
+    margin: 0;
+    color: #00ccff;
+    font-size: clamp(1.2rem, 4vw, 2rem); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+p {
+    font-size: clamp(1rem, 2.5vw, 1.2rem); 
+    color: #ffffff;
+    margin: 10px 0 0;
+}
+button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: clamp(0.8rem, 2vw, 1rem); 
+    color: #ffffff;
+    background-color: #0be930;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+button:hover {
+    background-color: #ffcc00;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+}
+button:active {
+    background-color: #ff4500;
+    transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        text-align: center;
+    }
+    img {
+        width: 80%; 
+        max-width: 300px;
+    }
+    .text-content {
+        padding: 10px;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.5rem; 
+    }
+    button {
+        padding: 8px 16px; 
+    }
+    .container {
+        gap: 10px; 
+    }
+}
